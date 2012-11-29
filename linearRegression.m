@@ -143,4 +143,9 @@ plot(cost);
 xlabel('Iterations');
 ylabel('Cost function');
 
-fprintf('Done.\n');
+%{
+    Now let's do some predictions
+%}
+fprintf('Predicted number of lines of code in:\n');
+fprintf('\tDecember 2010:  %d\n', [1 31]*theta*1000000);
+fprintf('\tJanuary 2011:  %d\n', [1 32]*theta*1000000);
